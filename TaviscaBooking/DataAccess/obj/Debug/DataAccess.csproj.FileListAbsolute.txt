@@ -1,0 +1,11 @@
+C:\Users\skapoor\source\repos\TaviscaBooking\DataAccess\bin\Debug\DataAccess.dll.config
+C:\Users\skapoor\source\repos\TaviscaBooking\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\skapoor\source\repos\TaviscaBooking\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\skapoor\source\repos\TaviscaBooking\DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\skapoor\source\repos\TaviscaBooking\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\skapoor\source\repos\TaviscaBooking\DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\skapoor\source\repos\TaviscaBooking\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\skapoor\source\repos\TaviscaBooking\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\skapoor\source\repos\TaviscaBooking\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\skapoor\source\repos\TaviscaBooking\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\skapoor\source\repos\TaviscaBooking\DataAccess\obj\Debug\DataAccess.pdb

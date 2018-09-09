@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaviscaBooking", "TaviscaBooking\TaviscaBooking.csproj", "{11EC17FF-21FE-4CCE-A2AF-2FFA9F85D3A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{65F252FD-4E81-452B-B4BA-F512516DD6A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11EC17FF-21FE-4CCE-A2AF-2FFA9F85D3A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11EC17FF-21FE-4CCE-A2AF-2FFA9F85D3A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11EC17FF-21FE-4CCE-A2AF-2FFA9F85D3A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11EC17FF-21FE-4CCE-A2AF-2FFA9F85D3A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65F252FD-4E81-452B-B4BA-F512516DD6A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65F252FD-4E81-452B-B4BA-F512516DD6A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65F252FD-4E81-452B-B4BA-F512516DD6A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65F252FD-4E81-452B-B4BA-F512516DD6A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {158D0BC3-CB98-4556-8C37-656F0F914EC1}
+	EndGlobalSection
+EndGlobal

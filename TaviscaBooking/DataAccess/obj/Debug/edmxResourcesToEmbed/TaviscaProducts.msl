@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TaviscaProductsModelStoreContainer" CdmEntityContainer="TaviscaProductsEntities">
+    <EntitySetMapping Name="Activities">
+      <EntityTypeMapping TypeName="TaviscaProductsModel.Activity">
+        <MappingFragment StoreEntitySet="Activity">
+          <ScalarProperty Name="Activity_Id" ColumnName="Activity_Id" />
+          <ScalarProperty Name="Activity_Name" ColumnName="Activity_Name" />
+          <ScalarProperty Name="Activity_Location" ColumnName="Activity_Location" />
+          <ScalarProperty Name="Activity_FromDate" ColumnName="Activity_FromDate" />
+          <ScalarProperty Name="Activity_ToDate" ColumnName="Activity_ToDate" />
+          <ScalarProperty Name="Activity_Price" ColumnName="Activity_Price" />
+          <ScalarProperty Name="Booked" ColumnName="Booked" />
+          <ScalarProperty Name="Saved" ColumnName="Saved" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cars">
+      <EntityTypeMapping TypeName="TaviscaProductsModel.Car">
+        <MappingFragment StoreEntitySet="Car">
+          <ScalarProperty Name="Car_Id" ColumnName="Car_Id" />
+          <ScalarProperty Name="Car_Model" ColumnName="Car_Model" />
+          <ScalarProperty Name="Car_RegisterNumber" ColumnName="Car_RegisterNumber" />
+          <ScalarProperty Name="Car_Category" ColumnName="Car_Category" />
+          <ScalarProperty Name="Car_Source" ColumnName="Car_Source" />
+          <ScalarProperty Name="Car_Destination" ColumnName="Car_Destination" />
+          <ScalarProperty Name="Car_FromDate" ColumnName="Car_FromDate" />
+          <ScalarProperty Name="Car_ToDate" ColumnName="Car_ToDate" />
+          <ScalarProperty Name="Car_Price" ColumnName="Car_Price" />
+          <ScalarProperty Name="Saved" ColumnName="Saved" />
+          <ScalarProperty Name="Booked" ColumnName="Booked" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Flights">
+      <EntityTypeMapping TypeName="TaviscaProductsModel.Flight">
+        <MappingFragment StoreEntitySet="Flight">
+          <ScalarProperty Name="Flight_Id" ColumnName="Flight_Id" />
+          <ScalarProperty Name="Flight_Name" ColumnName="Flight_Name" />
+          <ScalarProperty Name="Flight_Source" ColumnName="Flight_Source" />
+          <ScalarProperty Name="Flight_Destination" ColumnName="Flight_Destination" />
+          <ScalarProperty Name="Flight_DepartureTime" ColumnName="Flight_DepartureTime" />
+          <ScalarProperty Name="Flight_ArrivalTime" ColumnName="Flight_ArrivalTime" />
+          <ScalarProperty Name="Flight_DepartureDate" ColumnName="Flight_DepartureDate" />
+          <ScalarProperty Name="Flight_ArrivalDate" ColumnName="Flight_ArrivalDate" />
+          <ScalarProperty Name="Flight_Price" ColumnName="Flight_Price" />
+          <ScalarProperty Name="Booked" ColumnName="Booked" />
+          <ScalarProperty Name="Saved" ColumnName="Saved" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hotels">
+      <EntityTypeMapping TypeName="TaviscaProductsModel.Hotel">
+        <MappingFragment StoreEntitySet="Hotel">
+          <ScalarProperty Name="Hotel_Id" ColumnName="Hotel_Id" />
+          <ScalarProperty Name="Hotel_Name" ColumnName="Hotel_Name" />
+          <ScalarProperty Name="Hotel_Location" ColumnName="Hotel_Location" />
+          <ScalarProperty Name="Hotel_FromDate" ColumnName="Hotel_FromDate" />
+          <ScalarProperty Name="Hotel_ToDate" ColumnName="Hotel_ToDate" />
+          <ScalarProperty Name="Hotel_Price" ColumnName="Hotel_Price" />
+          <ScalarProperty Name="Booked" ColumnName="Booked" />
+          <ScalarProperty Name="Saved" ColumnName="Saved" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
