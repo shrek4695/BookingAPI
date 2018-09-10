@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <input type="button" value="Admin" onclick="admin()" />
+    <input type="button" value="User" onclick="user()" />
+    <div id="Admin">
+        <input type="button" value="Hotel" onclick="AdminHotel()" />
+        <input type="button" value="Flight" onclick="AdminFlight()" />
+        <input type="button" value="Car" onclick="AdminCar()" />
+        <input type="button" value="Activity" onclick="AdminActivity()" />
+        <div id="Adminactivity">
+            <form id="ActivityForm">
+                <label for="AName">Activity Name</label>
+                <input type="text" id="AName" /><br />
+                <label for="ALocation">Activity Location</label>
+                <input type="text" id="ALocation" /><br />
+                <label for="AFromDate">Activity FromDate</label>
+                <input type="date" id="AFromDate" /><br />
+                <label for="AToDate">Activity ToDate</label>
+                <input type="date" id="AToDate" /><br />
+                <label for="APrice">Activity Price</label>
+                <input type="number" id="APrice" /><br />
+                <input type="button" value="Submit" onclick="ActivitySubmit()" />
+            </form>
+        </div>
+        <div id="Adminhotel">
+            <form id="HotelForm">
+                <label for="HName">Hotel Name</label>
+                <input type="text" id="HName" /><br />
+                <label for="HLocation">Hotel Location</label>
+                <input type="text" id="HLocation" /><br />
+                <label for="HFromDate">Hotel FromDate</label>
+                <input type="date" id="HFromDate" /><br />
+                <label for="HToDate">Hotel ToDate</label>
+                <input type="date" id="HToDate" /><br />
+                <label for="HPrice">Hotel Price</label>
+                <input type="number" id="HPrice" /><br />
+                <input type="button" value="Submit" onclick="HotelSubmit()" />
+            </form>
+        </div>
+        <div id="Adminflight">
+            <form id="FlightForm">
+                <label for="FName">Flight Name</label>
+                <input type="text" id="FName" /><br />
+                <label for="FSource">Flight Source</label>
+                <input type="text" id="FSource" /><br />
+                <label for="FDestination">Flight Destination</label>
+                <input type="text" id="FDestination" /><br />
+                <label for="FDepartureDate">Flight DepartureDate</label>
+                <input type="date" id="FDepartureDate" /><br />
+                <label for="FArrivalDate">Flight ArrivalDate</label>
+                <input type="date" id="FArrivalDate" /><br />
+                <label for="FDepartureTime">Flight DepartureTime</label>
+                <input type="time" id="FDepartureTime" /><br />
+                <label for="FArrivalTime">Flight ArrivalTime</label>
+                <input type="time" id="FArrivalTime" /><br />
+                <label for="FPrice">Flight Price</label>
+                <input type="number" id="FPrice" /><br />
+                <input type="button" value="Submit" onclick="FlightSubmit()" />
+            </form>
+        </div>
+        <div id="Admincar">
+            <form id="CarForm">
+                <label for="CModel">Car Model</label>
+                <input type="text" id="CModel" /><br />
+                <label for="CRegisterNumber">Car Register Number</label>
+                <input type="text" id="CRegisterNumber" /><br />
+                <label for="CCategory">Car Category</label>
+                <input type="text" id="CCategory" /><br />
+                <label for="CSource">Car Source</label>
+                <input type="text" id="CSource" /><br />
+                <label for="CDestination">Car Destination</label>
+                <input type="text" id="CDestination" /><br />
+                <label for="CFromDate">Car FromDate</label>
+                <input type="date" id="CFromDate" /><br />
+                <label for="CToDate">Car ToDate</label>
+                <input type="date" id="CToDate" /><br />
+                <label for="CPrice">Car Price</label>
+                <input type="number" id="CPrice" /><br />
+                <input type="button" value="submit" onclick="CarSubmit()" />
+            </form>
+        </div>
+    </div>
+    <div id="User">
+        <div>
+            <input id="Hotel" type="button" value="Hotel" onclick="HotelDetails()" />
+            <input id="Flight" type="button" value="Flight" onclick="FlightDetails()" />
+            <input id="Car" type="button" value="Car" onclick="CarDetails()" />
+            <input id="Activity" type="button" value="Activity" onclick="ActivityDetails()" />
+            <div id="ProductDetails"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

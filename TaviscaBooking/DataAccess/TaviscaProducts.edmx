@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TaviscaProductsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Activity">
+          <Key>
+            <PropertyRef Name="Activity_Id" />
+          </Key>
+          <Property Name="Activity_Id" Type="int" Nullable="false" />
+          <Property Name="Activity_Name" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Activity_Location" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Activity_FromDate" Type="date" Nullable="false" />
+          <Property Name="Activity_ToDate" Type="date" Nullable="false" />
+          <Property Name="Activity_Price" Type="int" Nullable="false" />
+          <Property Name="Booked" Type="bit" Nullable="false" />
+          <Property Name="Saved" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Car">
+          <Key>
+            <PropertyRef Name="Car_Id" />
+          </Key>
+          <Property Name="Car_Id" Type="int" Nullable="false" />
+          <Property Name="Car_Model" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Car_RegisterNumber" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Car_Category" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Car_Source" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Car_Destination" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Car_FromDate" Type="date" Nullable="false" />
+          <Property Name="Car_ToDate" Type="date" Nullable="false" />
+          <Property Name="Car_Price" Type="int" Nullable="false" />
+          <Property Name="Saved" Type="bit" Nullable="false" />
+          <Property Name="Booked" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Flight">
+          <Key>
+            <PropertyRef Name="Flight_Id" />
+          </Key>
+          <Property Name="Flight_Id" Type="int" Nullable="false" />
+          <Property Name="Flight_Name" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Flight_Source" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Flight_Destination" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Flight_DepartureTime" Type="time" Precision="7" Nullable="false" />
+          <Property Name="Flight_ArrivalTime" Type="time" Precision="7" Nullable="false" />
+          <Property Name="Flight_DepartureDate" Type="date" Nullable="false" />
+          <Property Name="Flight_ArrivalDate" Type="date" Nullable="false" />
+          <Property Name="Flight_Price" Type="int" Nullable="false" />
+          <Property Name="Booked" Type="bit" Nullable="false" />
+          <Property Name="Saved" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Hotel">
+          <Key>
+            <PropertyRef Name="Hotel_Id" />
+          </Key>
+          <Property Name="Hotel_Id" Type="int" Nullable="false" />
+          <Property Name="Hotel_Name" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Hotel_Location" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Hotel_FromDate" Type="date" Nullable="false" />
+          <Property Name="Hotel_ToDate" Type="date" Nullable="false" />
+          <Property Name="Hotel_Price" Type="int" Nullable="false" />
+          <Property Name="Booked" Type="bit" Nullable="false" />
+          <Property Name="Saved" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="TaviscaProductsModelStoreContainer">
+          <EntitySet Name="Activity" EntityType="Self.Activity" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Car" EntityType="Self.Car" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Flight" EntityType="Self.Flight" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Hotel" EntityType="Self.Hotel" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TaviscaProductsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Activity">
+          <Key>
+            <PropertyRef Name="Activity_Id" />
+          </Key>
+          <Property Name="Activity_Id" Type="Int32" Nullable="false" />
+          <Property Name="Activity_Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Activity_Location" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Activity_FromDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Activity_ToDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Activity_Price" Type="Int32" Nullable="false" />
+          <Property Name="Booked" Type="Boolean" Nullable="false" />
+          <Property Name="Saved" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Car">
+          <Key>
+            <PropertyRef Name="Car_Id" />
+          </Key>
+          <Property Name="Car_Id" Type="Int32" Nullable="false" />
+          <Property Name="Car_Model" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Car_RegisterNumber" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Car_Category" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Car_Source" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Car_Destination" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Car_FromDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Car_ToDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Car_Price" Type="Int32" Nullable="false" />
+          <Property Name="Saved" Type="Boolean" Nullable="false" />
+          <Property Name="Booked" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Flight">
+          <Key>
+            <PropertyRef Name="Flight_Id" />
+          </Key>
+          <Property Name="Flight_Id" Type="Int32" Nullable="false" />
+          <Property Name="Flight_Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Flight_Source" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Flight_Destination" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Flight_DepartureTime" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="Flight_ArrivalTime" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="Flight_DepartureDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Flight_ArrivalDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Flight_Price" Type="Int32" Nullable="false" />
+          <Property Name="Booked" Type="Boolean" Nullable="false" />
+          <Property Name="Saved" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Hotel">
+          <Key>
+            <PropertyRef Name="Hotel_Id" />
+          </Key>
+          <Property Name="Hotel_Id" Type="Int32" Nullable="false" />
+          <Property Name="Hotel_Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Hotel_Location" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Hotel_FromDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Hotel_ToDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Hotel_Price" Type="Int32" Nullable="false" />
+          <Property Name="Booked" Type="Boolean" Nullable="false" />
+          <Property Name="Saved" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="TaviscaProductsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Activities" EntityType="Self.Activity" />
+          <EntitySet Name="Cars" EntityType="Self.Car" />
+          <EntitySet Name="Flights" EntityType="Self.Flight" />
+          <EntitySet Name="Hotels" EntityType="Self.Hotel" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TaviscaProductsModelStoreContainer" CdmEntityContainer="TaviscaProductsEntities">
+          <EntitySetMapping Name="Activities">
+            <EntityTypeMapping TypeName="TaviscaProductsModel.Activity">
+              <MappingFragment StoreEntitySet="Activity">
+                <ScalarProperty Name="Activity_Id" ColumnName="Activity_Id" />
+                <ScalarProperty Name="Activity_Name" ColumnName="Activity_Name" />
+                <ScalarProperty Name="Activity_Location" ColumnName="Activity_Location" />
+                <ScalarProperty Name="Activity_FromDate" ColumnName="Activity_FromDate" />
+                <ScalarProperty Name="Activity_ToDate" ColumnName="Activity_ToDate" />
+                <ScalarProperty Name="Activity_Price" ColumnName="Activity_Price" />
+                <ScalarProperty Name="Booked" ColumnName="Booked" />
+                <ScalarProperty Name="Saved" ColumnName="Saved" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cars">
+            <EntityTypeMapping TypeName="TaviscaProductsModel.Car">
+              <MappingFragment StoreEntitySet="Car">
+                <ScalarProperty Name="Car_Id" ColumnName="Car_Id" />
+                <ScalarProperty Name="Car_Model" ColumnName="Car_Model" />
+                <ScalarProperty Name="Car_RegisterNumber" ColumnName="Car_RegisterNumber" />
+                <ScalarProperty Name="Car_Category" ColumnName="Car_Category" />
+                <ScalarProperty Name="Car_Source" ColumnName="Car_Source" />
+                <ScalarProperty Name="Car_Destination" ColumnName="Car_Destination" />
+                <ScalarProperty Name="Car_FromDate" ColumnName="Car_FromDate" />
+                <ScalarProperty Name="Car_ToDate" ColumnName="Car_ToDate" />
+                <ScalarProperty Name="Car_Price" ColumnName="Car_Price" />
+                <ScalarProperty Name="Saved" ColumnName="Saved" />
+                <ScalarProperty Name="Booked" ColumnName="Booked" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Flights">
+            <EntityTypeMapping TypeName="TaviscaProductsModel.Flight">
+              <MappingFragment StoreEntitySet="Flight">
+                <ScalarProperty Name="Flight_Id" ColumnName="Flight_Id" />
+                <ScalarProperty Name="Flight_Name" ColumnName="Flight_Name" />
+                <ScalarProperty Name="Flight_Source" ColumnName="Flight_Source" />
+                <ScalarProperty Name="Flight_Destination" ColumnName="Flight_Destination" />
+                <ScalarProperty Name="Flight_DepartureTime" ColumnName="Flight_DepartureTime" />
+                <ScalarProperty Name="Flight_ArrivalTime" ColumnName="Flight_ArrivalTime" />
+                <ScalarProperty Name="Flight_DepartureDate" ColumnName="Flight_DepartureDate" />
+                <ScalarProperty Name="Flight_ArrivalDate" ColumnName="Flight_ArrivalDate" />
+                <ScalarProperty Name="Flight_Price" ColumnName="Flight_Price" />
+                <ScalarProperty Name="Booked" ColumnName="Booked" />
+                <ScalarProperty Name="Saved" ColumnName="Saved" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Hotels">
+            <EntityTypeMapping TypeName="TaviscaProductsModel.Hotel">
+              <MappingFragment StoreEntitySet="Hotel">
+                <ScalarProperty Name="Hotel_Id" ColumnName="Hotel_Id" />
+                <ScalarProperty Name="Hotel_Name" ColumnName="Hotel_Name" />
+                <ScalarProperty Name="Hotel_Location" ColumnName="Hotel_Location" />
+                <ScalarProperty Name="Hotel_FromDate" ColumnName="Hotel_FromDate" />
+                <ScalarProperty Name="Hotel_ToDate" ColumnName="Hotel_ToDate" />
+                <ScalarProperty Name="Hotel_Price" ColumnName="Hotel_Price" />
+                <ScalarProperty Name="Booked" ColumnName="Booked" />
+                <ScalarProperty Name="Saved" ColumnName="Saved" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

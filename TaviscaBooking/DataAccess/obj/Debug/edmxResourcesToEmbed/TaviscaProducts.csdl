@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TaviscaProductsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Activity">
+    <Key>
+      <PropertyRef Name="Activity_Id" />
+    </Key>
+    <Property Name="Activity_Id" Type="Int32" Nullable="false" />
+    <Property Name="Activity_Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Activity_Location" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Activity_FromDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Activity_ToDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Activity_Price" Type="Int32" Nullable="false" />
+    <Property Name="Booked" Type="Boolean" Nullable="false" />
+    <Property Name="Saved" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="Car_Id" />
+    </Key>
+    <Property Name="Car_Id" Type="Int32" Nullable="false" />
+    <Property Name="Car_Model" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Car_RegisterNumber" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Car_Category" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Car_Source" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Car_Destination" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Car_FromDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Car_ToDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Car_Price" Type="Int32" Nullable="false" />
+    <Property Name="Saved" Type="Boolean" Nullable="false" />
+    <Property Name="Booked" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Flight">
+    <Key>
+      <PropertyRef Name="Flight_Id" />
+    </Key>
+    <Property Name="Flight_Id" Type="Int32" Nullable="false" />
+    <Property Name="Flight_Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Flight_Source" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Flight_Destination" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Flight_DepartureTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Flight_ArrivalTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Flight_DepartureDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Flight_ArrivalDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Flight_Price" Type="Int32" Nullable="false" />
+    <Property Name="Booked" Type="Boolean" Nullable="false" />
+    <Property Name="Saved" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Hotel">
+    <Key>
+      <PropertyRef Name="Hotel_Id" />
+    </Key>
+    <Property Name="Hotel_Id" Type="Int32" Nullable="false" />
+    <Property Name="Hotel_Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Hotel_Location" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Hotel_FromDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Hotel_ToDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Hotel_Price" Type="Int32" Nullable="false" />
+    <Property Name="Booked" Type="Boolean" Nullable="false" />
+    <Property Name="Saved" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TaviscaProductsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Activities" EntityType="Self.Activity" />
+    <EntitySet Name="Cars" EntityType="Self.Car" />
+    <EntitySet Name="Flights" EntityType="Self.Flight" />
+    <EntitySet Name="Hotels" EntityType="Self.Hotel" />
+  </EntityContainer>
+</Schema>
